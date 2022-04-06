@@ -255,6 +255,7 @@ def main():
         print(" acc = ", accuracy[i])
         print(" question count = ", count_question[i])
     
+    print("test")
     print("**************************************************")
     print("acc. = ", accuracy)     
     print("Accuracy = ", np.mean(accuracy))
