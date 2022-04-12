@@ -217,13 +217,13 @@ def main():
     # map = np.array([])
     # top1 = np.array([])
     # accuracy = np.zeros(number_of_query)
-    accuracy = np.zeros(20)
+    accuracy = np.zeros(100)
     count_question = np.zeros(number_of_query)
     direction = 4
     top5_fail = 0
 
     start = time.time()
-    for i in range(20):
+    for i in range(100):
         dis_list = {}
         print("\nquery: ", query[i].name)
 
@@ -253,9 +253,8 @@ def main():
         ans, accuracy[i] = QAndA(query[i].name[:-10], query_east, correct_question, question, top5_info, img_sim, question_east)
 
         print(" acc = ", accuracy[i])
-        print(" question count = ", count_question[i])
+        # print(" question count = ", count_question[i])
     
-    print("test")
     print("**************************************************")
     print("acc. = ", accuracy)     
     print("Accuracy = ", np.mean(accuracy))
