@@ -22,7 +22,7 @@ Question:  ['clinic', 'elc', 'exit', 'pin', 'sakuraya', 'sushi tei', 'bench', 'c
 　 pin : 	False
 　 elc : 	False
 　 sakuraya : 	False
-　 chair : 	False
+　 clinic : 	False
 --------------------------------------------
  ans:  []
  acc =  0.0
@@ -33,9 +33,10 @@ query:  001_00002.jpg
 Question:  ['b1', 'elc', 'mother', 'starbucks coffee', 'sushi tei', 'bench', 'bottle', 'chair', 'cup', 'pottedplant', 'tvmonitor']
 ---------------- ↓Question↓ ----------------
 　 starbucks coffee : 	False
-　 b1 : 	False
+　 mother : 	False
 　 elc : 	False
-　 bench : 	True
+　 bottle : 	False
+　 sushi tei : 	True
 --------------------------------------------
  ans:  ['082']
  acc =  1.0
@@ -49,7 +50,7 @@ Question:  ['clinic', 'elc', 'sakuraya', 'sushi tei', 'bench', 'pottedplant']
 　 clinic : 	False
 　 sakuraya : 	False
 　 elc : 	False
-　 pottedplant : 	True
+　 sushi tei : 	True
 --------------------------------------------
  ans:  ['082']
  acc =  1.0
@@ -62,7 +63,7 @@ Question:  ['020.sg', 'clinic', 'elc', 'sakuraya', 'sushi tei', 'bench', 'potted
 　 020.sg : 	False
 　 sakuraya : 	False
 　 elc : 	False
-　 pottedplant : 	True
+　 bench : 	True
 --------------------------------------------
  ans:  ['082']
  acc =  1.0
@@ -74,7 +75,7 @@ Question:  ['clinic', 'exit', 'sakuraya', 'sushi tei', 'bench', 'chair']
 ---------------- ↓Question↓ ----------------
 　 clinic : 	True
 　 exit : 	False
-　 sakuraya : 	True
+　 sushi tei : 	True
 --------------------------------------------
  ans:  ['003']
  acc =  1.0
@@ -97,7 +98,7 @@ Question:  ['clinic', 'exit', 'sakuraya', 'sushi tei', 'bench', 'chair']
 ---------------- ↓Question↓ ----------------
 　 clinic : 	True
 　 exit : 	False
-　 sakuraya : 	True
+　 sushi tei : 	True
 --------------------------------------------
  ans:  ['003']
  acc =  1.0
@@ -128,9 +129,9 @@ Question:  ['020.sg', 'clinic', 'exit', 'sakuraya', 'starbucks coffee', 'chair',
 query:  008_00002.jpg
  ans_img:  ['006' '003' '181' '182' '117']
  sim:  [0.25250906 0.21970068 0.17840843 0.17163719 0.15577455]
-Question:  ['clinic', 'exit', 'm', 'sakuraya', 'starbucks coffee', 'sushi tei', 'apple', 'bench', 'car', 'chair', 'pottedplant', 'teddy bear']
+Question:  ['clinic', 'exit', 'mother', 'sakuraya', 'starbucks coffee', 'sushi tei', 'apple', 'bench', 'car', 'chair', 'pottedplant', 'teddy bear']
 ---------------- ↓Question↓ ----------------
-　 m : 	False
+　 mother : 	False
 　 sakuraya : 	True
 --------------------------------------------
  ans:  ['003']
@@ -177,10 +178,10 @@ Question:  ['020.sg', 'spine & narve clinic', 'sushi tei', 'viva medical group w
 query:  020_00002.jpg
  ans_img:  ['012' '009' '373' '114' '104']
  sim:  [0.33632475 0.22866462 0.17844057 0.17496218 0.17093526]
-Question:  ['020.sg', 'clinic', "long john silver's", 'm', 'pin', 'sakuraya', 'sk.med', 'starbucks coffee', 'viva medical group westside', 'backpack', 'bench', 'book', 'bottle', 'bowl', 'car', 'chair', 'cup', 'diningtable', 'handbag', 'pottedplant', 'tvmonitor']
+Question:  ['020.sg', 'clinic', "long john silver's", 'mother', 'pin', 'sakuraya', 'sk.med', 'starbucks coffee', 'viva medical group westside', 'backpack', 'bench', 'book', 'bottle', 'bowl', 'car', 'chair', 'cup', 'diningtable', 'handbag', 'pottedplant', 'tvmonitor']
 ---------------- ↓Question↓ ----------------
 　 tvmonitor : 	False
-　 m : 	False
+　 starbucks coffee : 	False
 　 020.sg : 	True
 　 bottle : 	True
 --------------------------------------------
@@ -227,7 +228,7 @@ Question:  ['dsmitd', 'kozett', 's.k.med', 'shops', 'viva medical group westside
 ---------------- ↓Question↓ ----------------
 　 diningtable : 	False
 　 kozett : 	False
-　 s.k.med : 	True
+　 viva medical group westside : 	True
 　 teddy bear : 	True
 --------------------------------------------
  ans:  ['051']
@@ -239,10 +240,10 @@ query:  031_00003.jpg
 Question:  ['dsmitd', 'funhouse', 's.k.med', 'sushi tei', 'viva medical group westside', 'chair', 'pottedplant', 'teddy bear', 'tvmonitor']
 ---------------- ↓Question↓ ----------------
 　 chair : 	False
-　 viva medical group westside : 	True
+　 funhouse : 	False
 　 dsmitd : 	False
 　 pottedplant : 	False
-　 s.k.med : 	True
+　 viva medical group westside : 	True
 --------------------------------------------
  ans:  ['052']
  acc =  1.0
@@ -266,7 +267,7 @@ query:  035_00001.jpg
 Question:  ['50%', 'bods.bodynits', 'customer service counter', 'l1', 'out', 'power', 'sale', 'west coast plaza', 'backpack', 'bench', 'car', 'handbag', 'laptop', 'pottedplant']
 ---------------- ↓Question↓ ----------------
 　 power : 	False
-　 bods.bodynits : 	False
+　 sale : 	False
 　 l1 : 	True
 --------------------------------------------
  ans:  ['033']
@@ -312,7 +313,8 @@ Question:  ['customer service counter', 'jalan kayu', 'l1', 'out', 'steven', 'we
 　 jalan kayu : 	False
 　 l1 : 	False
 　 customer service counter : 	True
-　 laptop : 	True
+　 truck : 	False
+　 out : 	True
 --------------------------------------------
  ans:  ['037']
  acc =  1.0
@@ -323,7 +325,7 @@ query:  036_00002.jpg
 Question:  ['customer service counter', 'japan home', 'new story coming up', 'out', 'west coast plaza', 'backpack', 'bottle', 'chair', 'keyboard', 'laptop', 'pottedplant', 'truck', 'tvmonitor', 'wine glass']
 ---------------- ↓Question↓ ----------------
 　 truck : 	False
-　 out : 	True
+　 west coast plaza : 	True
 --------------------------------------------
  ans:  ['037']
  acc =  1.0
@@ -368,8 +370,8 @@ Question:  ['customer service counter', 'l1', 's.k.med', 'steven', 'viva medical
 　 s.k.med : 	False
 　 viva medical group westside : 	False
 　 l1 : 	False
-　 backpack : 	False
-　 book : 	False
+　 truck : 	False
+　 handbag : 	False
 --------------------------------------------
  ans:  []
  acc =  0.0
@@ -380,7 +382,7 @@ query:  039_00003.jpg
 Question:  ['customer service counter', 'exit', 'meng', 'out', 'steven', 'west coast plaza', 'bench', 'bicycle', 'book', 'bottle', 'chair', 'handbag', 'laptop', 'pottedplant', 'suitcase', 'truck', 'tvmonitor']
 ---------------- ↓Question↓ ----------------
 　 exit : 	False
-　 out : 	True
+　 west coast plaza : 	True
 --------------------------------------------
  ans:  ['037']
  acc =  1.0
@@ -393,7 +395,8 @@ Question:  ['customer service counter', 'ktv', 'out', 'steven', 'west coast plaz
 　 cell phone : 	False
 　 ktv : 	False
 　 customer service counter : 	True
-　 laptop : 	True
+　 truck : 	False
+　 out : 	True
 --------------------------------------------
  ans:  ['037']
  acc =  1.0
@@ -417,11 +420,11 @@ Question:  ['bods.bodynits', 'customer service counter', 'discover', 'mother', '
 　 mother : 	False
 　 discover : 	False
 　 steven : 	True
+　 truck : 	False
 　 suitcase : 	False
-　 pottedplant : 	True
 --------------------------------------------
- ans:  ['038']
- acc =  1.0
+ ans:  []
+ acc =  0.0
 
 query:  040_00003.jpg
  ans_img:  ['041' '042' '038' '043' '037']
@@ -440,13 +443,13 @@ query:  040_00004.jpg
 Question:  ['customer service counter', 'ktv', 'out', 'steven', 'west coast plaza', 'bench', 'book', 'bottle', 'chair', 'handbag', 'laptop', 'pottedplant', 'suitcase', 'truck', 'tvmonitor']
 ---------------- ↓Question↓ ----------------
 　 ktv : 	False
-　 out : 	False
+　 west coast plaza : 	False
 　 steven : 	True
+　 truck : 	False
 　 suitcase : 	False
-　 pottedplant : 	True
 --------------------------------------------
- ans:  ['038']
- acc =  1.0
+ ans:  []
+ acc =  0.0
 
 query:  048_00001.jpg
  ans_img:  ['047' '050' '046' '052' '051']
@@ -454,7 +457,7 @@ query:  048_00001.jpg
 Question:  ['5336', 'call', 'dsmitd', 'ries', 's.k.med', 'sing', 'steven', 'viva medical group westside', 'pottedplant', 'suitcase', 'teddy bear']
 ---------------- ↓Question↓ ----------------
 　 dsmitd : 	False
-　 5336 : 	True
+　 call : 	True
 --------------------------------------------
  ans:  ['047']
  acc =  1.0
@@ -462,7 +465,7 @@ Question:  ['5336', 'call', 'dsmitd', 'ries', 's.k.med', 'sing', 'steven', 'viva
 query:  048_00002.jpg
  ans_img:  ['047' '291' '071' '092' '390']
  sim:  [0.5581284  0.46752626 0.30267376 0.26421216 0.25270095]
-Question:  ['5336', '60', 'adept', 'call', 'considerate', 'exhausting', 'hilarious', 'hosereel', 'm', 'new fun coming', 'process', 'ries', 's.k.med', 'sale', 'since', 'sing', 'starbucks coffee', 'steven', 'wonderful', 'bicycle', 'book', 'clock', 'pottedplant', 'suitcase', 'teddy bear']
+Question:  ['5336', '60', 'adept', 'call', 'considerate', 'exhausting', 'hilarious', 'hosereel', 'mother', 'new fun coming', 'process', 'ries', 's.k.med', 'sale', 'since', 'sing', 'starbucks coffee', 'steven', 'wonderful', 'bicycle', 'book', 'clock', 'pottedplant', 'suitcase', 'teddy bear']
 ---------------- ↓Question↓ ----------------
 　 clock : 	False
 　 new fun coming : 	True
@@ -476,10 +479,11 @@ query:  048_00003.jpg
 Question:  ['5336', '70%', 'call', 'ries', 's.k.med', 'sale', 'sing', 'steven', 'viva medical group westside', 'bottle', 'car', 'pottedplant', 'suitcase', 'teddy bear', 'vase']
 ---------------- ↓Question↓ ----------------
 　 bottle : 	False
-　 70% : 	False
-　 viva medical group westside : 	True
+　 sale : 	False
+　 steven : 	True
+　 suitcase : 	False
 --------------------------------------------
- ans:  ['050']
+ ans:  ['046']
  acc =  1.0
 
 query:  048_00004.jpg
@@ -488,11 +492,10 @@ query:  048_00004.jpg
 Question:  ['5336', 'call', 'meng', 'new fun coming', 'ries', 's.k.med', 'sing', 'steven', 'tel:68733252', 'viva medical group westside', 'backpack', 'bench', 'chair', 'diningtable', 'pottedplant', 'suitcase']
 ---------------- ↓Question↓ ----------------
 　 bench : 	False
-　 meng : 	False
-　 viva medical group westside : 	True
+　 new fun coming : 	True
 --------------------------------------------
- ans:  ['050']
- acc =  1.0
+ ans:  ['045']
+ acc =  0.0
 
 query:  049_00001.jpg
  ans_img:  ['050' '047' '046' '052' '051']
@@ -500,7 +503,7 @@ query:  049_00001.jpg
 Question:  ['5336', 'call', 'dsmitd', 'ries', 's.k.med', 'sing', 'steven', 'viva medical group westside', 'pottedplant', 'suitcase', 'teddy bear']
 ---------------- ↓Question↓ ----------------
 　 dsmitd : 	False
-　 5336 : 	True
+　 call : 	True
 --------------------------------------------
  ans:  ['047']
  acc =  1.0
@@ -508,14 +511,14 @@ Question:  ['5336', 'call', 'dsmitd', 'ries', 's.k.med', 'sing', 'steven', 'viva
 query:  049_00002.jpg
  ans_img:  ['117' '071' '258' '121' '303']
  sim:  [0.4062944  0.30755478 0.21198888 0.2100999  0.19643688]
-Question:  ['m', 'sale', 'starbucks coffee', 'backpack', 'book', 'car', 'chair', 'handbag', 'pottedplant', 'teddy bear']
+Question:  ['exit', 'for', 'for leasing enquiries', 'mother', 'sale', 'starbucks coffee', 'backpack', 'book', 'car', 'chair', 'handbag', 'pottedplant', 'teddy bear']
 ---------------- ↓Question↓ ----------------
 　 chair : 	False
-　 sale : 	False
-　 m : 	False
+　 for : 	False
+　 starbucks coffee : 	False
 　 handbag : 	False
 --------------------------------------------
- ans:  ['121']
+ ans:  []
  acc =  0.0
 
 query:  049_00003.jpg
@@ -524,7 +527,7 @@ query:  049_00003.jpg
 Question:  ['5336', 'call', 'dsmitd', 'ries', 's.k.med', 'sing', 'steven', 'sushi tei', 'viva medical group westside', 'clock', 'pottedplant', 'suitcase', 'teddy bear']
 ---------------- ↓Question↓ ----------------
 　 sushi tei : 	False
-　 5336 : 	True
+　 steven : 	True
 --------------------------------------------
  ans:  ['047']
  acc =  1.0
@@ -536,10 +539,11 @@ Question:  ['5336', 'call', 'dsmitd', 'ries', 's.k.med', 'sing', 'steven', 'viva
 ---------------- ↓Question↓ ----------------
 　 bench : 	False
 　 dsmitd : 	False
-　 viva medical group westside : 	True
+　 steven : 	True
+　 suitcase : 	False
 --------------------------------------------
- ans:  ['050']
- acc =  1.0
+ ans:  ['046']
+ acc =  0.0
 
 query:  053_00001.jpg
  ans_img:  ['052' '056' '055' '051' '050']
@@ -550,7 +554,7 @@ Question:  ['dsmitd', 'funhouse', 's.k.med', 'sushi tei', 'viva medical group we
 　 dsmitd : 	False
 　 funhouse : 	False
 　 clock : 	False
-　 s.k.med : 	True
+　 viva medical group westside : 	True
 --------------------------------------------
  ans:  ['052']
  acc =  1.0
@@ -558,9 +562,9 @@ Question:  ['dsmitd', 'funhouse', 's.k.med', 'sushi tei', 'viva medical group we
 query:  053_00002.jpg
  ans_img:  ['318' '055' '216' '018' '125']
  sim:  [0.23552638 0.23493777 0.2321811  0.22261576 0.2225323 ]
-Question:  ['sushi tei', 'viva medical group westside', 'bed', 'bench', 'car', 'chair', 'clock', 'diningtable', 'handbag', 'motorbike', 'sofa', 'vase']
+Question:  ['bods.bodynits', 'mother', 'starbucks coffee', 'sushi tei', 'viva medical group westside', 'bed', 'bench', 'car', 'chair', 'clock', 'diningtable', 'handbag', 'motorbike', 'sofa', 'vase']
 ---------------- ↓Question↓ ----------------
-　 car : 	False
+　 mother : 	False
 　 viva medical group westside : 	True
 --------------------------------------------
  ans:  ['018']
@@ -607,7 +611,7 @@ Question:  ['dsmitd', 'funhouse', 's.k.med', 'sushi tei', 'viva medical group we
 query:  054_00002.jpg
  ans_img:  ['055' '146' '380' '338' '333']
  sim:  [0.33898196 0.26736206 0.26522368 0.26163256 0.26078573]
-Question:  ['sushi tei', 'bench', 'bicycle', 'car', 'chair', 'clock', 'diningtable', 'handbag', 'keyboard', 'tvmonitor']
+Question:  ['new story coming up', 'sushi tei', 'bench', 'bicycle', 'car', 'chair', 'clock', 'diningtable', 'handbag', 'keyboard', 'tvmonitor']
 ---------------- ↓Question↓ ----------------
 　 tvmonitor : 	True
 --------------------------------------------
@@ -620,7 +624,7 @@ query:  054_00003.jpg
 Question:  ['funhouse', 's.k.med', 'sushi tei', 'viva medical group westside', 'chair', 'clock', 'pottedplant', 'tie', 'tvmonitor']
 ---------------- ↓Question↓ ----------------
 　 pottedplant : 	False
-　 viva medical group westside : 	True
+　 s.k.med : 	True
 --------------------------------------------
  ans:  ['052']
  acc =  1.0
@@ -657,10 +661,10 @@ Question:  ['house', 'ktv', 'rediscover', 'sushi tei', 'car', 'chair', 'cup', 'h
 　 ktv : 	False
 　 house : 	False
 　 handbag : 	False
-　 cup : 	False
+　 sushi tei : 	True
 --------------------------------------------
- ans:  []
- acc =  0.0
+ ans:  ['061']
+ acc =  1.0
 
 query:  060_00003.jpg
  ans_img:  ['059' '061' '058' '057' '056']
@@ -690,10 +694,11 @@ query:  062_00001.jpg
 Question:  ['clinic', 'ecligner', 'house', 'making the perfect smile', 'rediscover', 'sushi tei', 'book', 'cup', 'tvmonitor']
 ---------------- ↓Question↓ ----------------
 　 house : 	False
-　 ecligner : 	True
+　 making the perfect smile : 	False
+　 rediscover : 	True
 --------------------------------------------
- ans:  ['065']
- acc =  0.0
+ ans:  ['061']
+ acc =  1.0
 
 query:  062_00002.jpg
  ans_img:  ['316' '058' '238' '382' '059']
@@ -723,7 +728,7 @@ Question:  ['clinic', 'funhouse', 'house', 'rediscover', 'sushi tei', 'viva medi
 ---------------- ↓Question↓ ----------------
 　 tie : 	False
 　 house : 	False
-　 viva medical group westside : 	False
+　 funhouse : 	False
 　 cup : 	False
 　 clinic : 	True
 --------------------------------------------
@@ -736,7 +741,7 @@ query:  066_00001.jpg
 Question:  ['clinic', 'ecligner', 'making the perfect smile', 'sushi tei', 'book', 'chair', 'tvmonitor']
 ---------------- ↓Question↓ ----------------
 　 sushi tei : 	True
-　 ecligner : 	True
+　 making the perfect smile : 	True
 --------------------------------------------
  ans:  ['065']
  acc =  1.0
@@ -779,9 +784,10 @@ query:  067_00001.jpg
 Question:  ['clinic', 'ecligner', 'making the perfect smile', 'sushi tei', 'bench', 'book', 'chair', 'pottedplant', 'refrigerator', 'tvmonitor']
 ---------------- ↓Question↓ ----------------
 　 bench : 	False
-　 ecligner : 	False
+　 making the perfect smile : 	False
 　 clinic : 	True
-　 tvmonitor : 	True
+　 book : 	False
+　 sushi tei : 	True
 --------------------------------------------
  ans:  ['069']
  acc =  1.0
@@ -794,8 +800,8 @@ Question:  ['echouse', 'kozett', 'learning zone', 'mind matter', 'shops', 'sushi
 　 clock : 	False
 　 kozett : 	False
 　 viva medical group westside : 	False
-　 toilet : 	False
-　 echouse : 	False
+　 truck : 	False
+　 mind matter : 	False
 --------------------------------------------
  ans:  []
  acc =  0.0
@@ -806,8 +812,9 @@ query:  067_00003.jpg
 Question:  ['clinic', 'ecligner', 'making the perfect smile', 'sushi tei', 'book', 'chair', 'tvmonitor']
 ---------------- ↓Question↓ ----------------
 　 sushi tei : 	True
-　 ecligner : 	False
+　 making the perfect smile : 	False
 　 clinic : 	True
+　 book : 	False
 　 tvmonitor : 	True
 --------------------------------------------
  ans:  ['069']
@@ -819,8 +826,9 @@ query:  067_00004.jpg
 Question:  ['clinic', 'ecligner', 'making the perfect smile', 'sushi tei', 'book', 'chair', 'tvmonitor']
 ---------------- ↓Question↓ ----------------
 　 sushi tei : 	True
-　 ecligner : 	False
+　 making the perfect smile : 	False
 　 clinic : 	True
+　 book : 	False
 　 tvmonitor : 	True
 --------------------------------------------
  ans:  ['069']
@@ -856,11 +864,10 @@ Question:  ['bods.bodynits', 'clinic', 'exit', 'globalart', 'outlet', 'please wa
 　 bicycle : 	False
 　 bods.bodynits : 	False
 　 globalart : 	False
-　 surfboard : 	False
-　 please wait to be : 	True
+　 bed : 	True
 --------------------------------------------
- ans:  ['074']
- acc =  0.0
+ ans:  ['076']
+ acc =  1.0
 
 query:  077_00004.jpg
  ans_img:  ['076' '079' '080' '107' '106']
@@ -932,7 +939,7 @@ Question:  ['clinic', 'elc', 'mindchamps', 'outlet', 'sakuraya', 'sale', 'sushi 
 ---------------- ↓Question↓ ----------------
 　 outlet : 	False
 　 clinic : 	False
-　 mindchamps : 	False
+　 sale : 	False
 　 pottedplant : 	True
 --------------------------------------------
  ans:  ['084']
@@ -1010,10 +1017,12 @@ query:  094_00001.jpg
 Question:  ['b1', 'elc', 'mother', 'starbucks coffee', 'steven', 'sushi tei', 'toilet', 'backpack', 'bicycle', 'book', 'chair', 'handbag', 'pottedplant', 'tvmonitor']
 ---------------- ↓Question↓ ----------------
 　 b1 : 	False
-　 steven : 	False
-　 toilet : 	True
+　 starbucks coffee : 	True
+　 elc : 	True
+　 book : 	False
+　 sushi tei : 	True
 --------------------------------------------
- ans:  ['096']
+ ans:  ['093']
  acc =  1.0
 
 query:  094_00002.jpg
@@ -1033,9 +1042,11 @@ Question:  ['elc', 'mother', 'starbucks coffee', 'sushi tei', 'toilet', 'backpac
 ---------------- ↓Question↓ ----------------
 　 diningtable : 	False
 　 starbucks coffee : 	True
-　 toilet : 	True
+　 elc : 	True
+　 book : 	False
+　 sushi tei : 	True
 --------------------------------------------
- ans:  ['096']
+ ans:  ['093']
  acc =  1.0
 
 query:  094_00004.jpg
@@ -1055,9 +1066,10 @@ query:  097_00001.jpg
 Question:  ['elc', 'mother', 'pin', 'starbucks coffee', 'sushi tei', 'toilet', 'bench', 'bicycle', 'book', 'chair', 'diningtable', 'pottedplant']
 ---------------- ↓Question↓ ----------------
 　 diningtable : 	False
-　 pin : 	True
+　 starbucks coffee : 	True
+　 mother : 	True
 --------------------------------------------
- ans:  ['099']
+ ans:  ['095']
  acc =  1.0
 
 query:  097_00002.jpg
@@ -1087,7 +1099,7 @@ query:  097_00004.jpg
 Question:  ['dvnits', 'mindchamps', 'sale', 'shops', 'starbucks coffee', 'toilet', 'backpack', 'bench', 'bicycle', 'bowl', 'chair', 'diningtable', 'handbag', 'pottedplant']
 ---------------- ↓Question↓ ----------------
 　 dvnits : 	False
-　 shops : 	False
+　 starbucks coffee : 	True
 　 toilet : 	True
 --------------------------------------------
  ans:  ['096']
@@ -1099,12 +1111,10 @@ query:  100_00001.jpg
 Question:  ['pin', 'starbucks coffee', 'sushi tei', 'bottle', 'chair', 'cup', 'diningtable', 'pottedplant', 'truck']
 ---------------- ↓Question↓ ----------------
 　 truck : 	False
-　 sushi tei : 	True
-　 pin : 	True
-　 chair : 	True
+　 starbucks coffee : 	True
 --------------------------------------------
- ans:  ['184']
- acc =  0.0
+ ans:  ['102']
+ acc =  1.0
 
 query:  100_00002.jpg
  ans_img:  ['101' '184' '099' '085' '029']
@@ -1130,16 +1140,12 @@ Question:  ['pin', 'starbucks coffee', 'sushi tei', 'bench', 'bottle', 'chair', 
 query:  100_00004.jpg
  ans_img:  ['184' '101' '170' '003' '114']
  sim:  [0.7164967  0.6906381  0.55413735 0.54062104 0.538588  ]
-Question:  ['clinic', 'm', 'pin', 'sakuraya', 'starbucks coffee', 'sushi tei', 'backpack', 'bench', 'bicycle', 'book', 'bottle', 'car', 'chair', 'cup', 'diningtable', 'handbag', 'pottedplant']
+Question:  ['clinic', 'mother', 'pin', 'sakuraya', 'starbucks coffee', 'sushi tei', 'backpack', 'bench', 'bicycle', 'book', 'bottle', 'car', 'chair', 'cup', 'diningtable', 'handbag', 'pottedplant']
 ---------------- ↓Question↓ ----------------
-　 m : 	False
-　 clinic : 	False
-　 sushi tei : 	True
-　 diningtable : 	False
-　 chair : 	True
+　 mother : 	True
 --------------------------------------------
- ans:  ['101']
- acc =  1.0
+ ans:  ['114']
+ acc =  0.0
 
 query:  105_00001.jpg
  ans_img:  ['104' '106' '103' '102' '184']
@@ -1171,11 +1177,11 @@ Question:  ['new fun coming', 'pin', 'starbucks coffee', 'bench', 'bottle', 'bow
 　 diningtable : 	True
 　 starbucks coffee : 	True
 　 pin : 	True
+　 truck : 	False
 　 bowl : 	False
-　 chair : 	True
 --------------------------------------------
- ans:  ['103']
- acc =  1.0
+ ans:  []
+ acc =  0.0
 
 query:  105_00004.jpg
  ans_img:  ['104' '106' '107' '079' '103']
@@ -1187,11 +1193,478 @@ Question:  ['new fun coming', 'pin', 'starbucks coffee', 'bench', 'bottle', 'bow
 --------------------------------------------
  ans:  ['104']
  acc =  1.0
+
+query:  118_00001.jpg
+ ans_img:  ['117' '121' '114' '113' '071']
+ sim:  [0.6403608 0.6330587 0.6150898 0.5811543 0.5703992]
+Question:  ['for', 'mother', 'sale', 'starbucks coffee', 'backpack', 'bench', 'book', 'car', 'chair', 'diningtable', 'handbag', 'pottedplant', 'teddy bear']
+---------------- ↓Question↓ ----------------
+　 sale : 	True
+--------------------------------------------
+ ans:  ['071']
+ acc =  1.0
+
+query:  118_00002.jpg
+ ans_img:  ['291' '047' '071' '092' '176']
+ sim:  [0.7145964  0.44288567 0.4318116  0.25730482 0.25324902]
+Question:  ['5336', '60', 'adept', 'call', 'considerate', 'exhausting', 'hilarious', 'mother', 'new fun coming', 'process', 'ries', 's.k.med', 'sale', 'since', 'sing', 'starbucks coffee', 'steven', 'wonderful', 'bicycle', 'book', 'pottedplant', 'suitcase', 'teddy bear']
+---------------- ↓Question↓ ----------------
+　 60 : 	False
+　 mother : 	True
+--------------------------------------------
+ ans:  ['071']
+ acc =  1.0
+
+query:  118_00003.jpg
+ ans_img:  ['071' '117' '177' '121' '122']
+ sim:  [0.65510553 0.58303857 0.5542748  0.5444926  0.51526856]
+Question:  ['for', 'mother', 'new fun coming', 'sale', 'starbucks coffee', 'book', 'car', 'chair', 'motorbike', 'pottedplant', 'teddy bear', 'tvmonitor']
+---------------- ↓Question↓ ----------------
+　 chair : 	True
+--------------------------------------------
+ ans:  ['122']
+ acc =  0.0
+
+query:  118_00004.jpg
+ ans_img:  ['117' '071' '116' '115' '114']
+ sim:  [0.70960504 0.6752256  0.64635265 0.56691444 0.522468  ]
+Question:  ['hosereel', 'mother', 'new fun coming', 'sale', 'starbucks coffee', 'backpack', 'bench', 'book', 'bottle', 'car', 'chair', 'diningtable', 'handbag', 'pottedplant', 'refrigerator', 'teddy bear']
+---------------- ↓Question↓ ----------------
+　 backpack : 	False
+　 hosereel : 	False
+　 mother : 	True
+　 book : 	False
+　 car : 	False
+--------------------------------------------
+ ans:  []
+ acc =  0.0
+
+query:  119_00001.jpg
+ ans_img:  ['121' '124' '117' '125' '114']
+ sim:  [0.6886191 0.647455  0.6179072 0.6091298 0.5860591]
+Question:  ['for', 'mother', 'starbucks coffee', 'backpack', 'bench', 'car', 'chair', 'diningtable', 'handbag', 'motorbike', 'teddy bear']
+---------------- ↓Question↓ ----------------
+　 backpack : 	False
+　 for : 	False
+　 starbucks coffee : 	True
+--------------------------------------------
+ ans:  ['124', '117', '125']
+ acc =  0.0
+
+query:  119_00002.jpg
+ ans_img:  ['293' '046' '294' '292' '088']
+ sim:  [0.49393246 0.31613553 0.21879366 0.20119587 0.16704595]
+Question:  ['elc', 'shops', 'sponge', 'steven', 'bicycle', 'chair', 'pottedplant', 'refrigerator', 'teddy bear', 'train']
+---------------- ↓Question↓ ----------------
+　 elc : 	False
+　 shops : 	False
+　 sponge : 	False
+　 train : 	False
+　 steven : 	False
+--------------------------------------------
+ ans:  []
+ acc =  0.0
+
+query:  119_00003.jpg
+ ans_img:  ['071' '122' '124' '117' '121']
+ sim:  [0.64876825 0.5966213  0.585262   0.58495635 0.5729579 ]
+Question:  ['for', 'mother', 'sale', 'starbucks coffee', 'book', 'car', 'chair', 'diningtable', 'motorbike', 'pottedplant', 'teddy bear']
+---------------- ↓Question↓ ----------------
+　 for : 	False
+　 sale : 	True
+--------------------------------------------
+ ans:  ['071']
+ acc =  1.0
+
+query:  119_00004.jpg
+ ans_img:  ['071' '116' '117' '121' '122']
+ sim:  [0.6089216  0.59939086 0.55727047 0.5388302  0.521512  ]
+Question:  ['for', 'mother', 'new fun coming', 'sale', 'starbucks coffee', 'book', 'bottle', 'car', 'chair', 'handbag', 'motorbike', 'pottedplant', 'teddy bear']
+---------------- ↓Question↓ ----------------
+　 motorbike : 	False
+　 for : 	False
+　 sale : 	True
+　 book : 	False
+　 starbucks coffee : 	True
+--------------------------------------------
+ ans:  ['116']
+ acc =  0.0
+
+query:  120_00001.jpg
+ ans_img:  ['121' '124' '125' '117' '126']
+ sim:  [0.752384   0.62171674 0.5926566  0.5865017  0.5523801 ]
+Question:  ['for', 'mother', 'starbucks coffee', 'bicycle', 'bus', 'car', 'chair', 'diningtable', 'motorbike', 'teddy bear']
+---------------- ↓Question↓ ----------------
+　 bicycle : 	False
+　 for : 	False
+　 starbucks coffee : 	True
+--------------------------------------------
+ ans:  ['124', '125', '117']
+ acc =  0.0
+
+query:  120_00002.jpg
+ ans_img:  ['294' '365' '046' '116' '390']
+ sim:  [0.7583266  0.24255799 0.23626679 0.17996374 0.17883547]
+Question:  ['3.14', 'hosereel', 'new flavours coming up', 'new fun coming', 'sale', 'sponge', 'starbucks coffee', 'steven', 'bench', 'bicycle', 'book', 'bottle', 'car', 'chair', 'clock', 'handbag', 'pottedplant', 'suitcase']
+---------------- ↓Question↓ ----------------
+　 hosereel : 	False
+　 starbucks coffee : 	True
+--------------------------------------------
+ ans:  ['116']
+ acc =  0.0
+
+query:  120_00003.jpg
+ ans_img:  ['122' '121' '124' '071' '117']
+ sim:  [0.6338998  0.6328772  0.5341165  0.52697843 0.5100166 ]
+Question:  ['for', 'mother', 'sale', 'starbucks coffee', 'book', 'car', 'chair', 'diningtable', 'motorbike', 'pottedplant', 'teddy bear']
+---------------- ↓Question↓ ----------------
+　 car : 	False
+　 sale : 	False
+　 for : 	False
+　 diningtable : 	False
+　 motorbike : 	True
+--------------------------------------------
+ ans:  ['122']
+ acc =  1.0
+
+query:  120_00004.jpg
+ ans_img:  ['121' '122' '071' '127' '124']
+ sim:  [0.60042787 0.5833235  0.56030303 0.5010117  0.48650518]
+Question:  ['for', 'mother', 'sale', 'starbucks coffee', 'bicycle', 'book', 'chair', 'diningtable', 'motorbike', 'pottedplant', 'teddy bear']
+---------------- ↓Question↓ ----------------
+　 diningtable : 	False
+　 sale : 	False
+　 for : 	False
+　 motorbike : 	True
+--------------------------------------------
+ ans:  ['122']
+ acc =  1.0
+
+query:  123_00001.jpg
+ ans_img:  ['122' '121' '124' '125' '126']
+ sim:  [0.65281343 0.6405192  0.6184452  0.5949442  0.519545  ]
+Question:  ['for', 'mother', 'starbucks coffee', 'bicycle', 'bus', 'car', 'chair', 'diningtable', 'motorbike']
+---------------- ↓Question↓ ----------------
+　 bicycle : 	True
+--------------------------------------------
+ ans:  ['126']
+ acc =  0.0
+
+query:  123_00002.jpg
+ ans_img:  ['122' '353' '124' '126' '125']
+ sim:  [0.43597898 0.2547262  0.20793022 0.20142181 0.19030628]
+Question:  ['mother', 'people impact', 'starbucks coffee', 'bicycle', 'bus', 'car', 'chair', 'diningtable', 'handbag', 'motorbike']
+---------------- ↓Question↓ ----------------
+　 car : 	False
+　 starbucks coffee : 	True
+　 mother : 	True
+--------------------------------------------
+ ans:  ['122', '124', '126']
+ acc =  1.0
+
+query:  123_00003.jpg
+ ans_img:  ['124' '125' '126' '127' '072']
+ sim:  [0.6859828  0.6591394  0.6186619  0.59033656 0.5877308 ]
+Question:  ['mother', 'starbucks coffee', 'bicycle', 'bus', 'car', 'chair', 'diningtable', 'motorbike', 'tvmonitor']
+---------------- ↓Question↓ ----------------
+　 tvmonitor : 	False
+　 starbucks coffee : 	True
+--------------------------------------------
+ ans:  ['124', '125', '126', '127']
+ acc =  1.0
+
+query:  123_00004.jpg
+ ans_img:  ['122' '124' '125' '127' '121']
+ sim:  [0.6735913 0.6208896 0.6086206 0.597576  0.5815966]
+Question:  ['for', 'mother', 'starbucks coffee', 'bicycle', 'car', 'chair', 'diningtable', 'motorbike']
+---------------- ↓Question↓ ----------------
+　 for : 	False
+　 starbucks coffee : 	True
+--------------------------------------------
+ ans:  ['122', '124', '125', '127']
+ acc =  1.0
+
+query:  132_00001.jpg
+ ans_img:  ['245' '244' '246' '250' '382']
+ sim:  [0.7177349  0.6278273  0.5944629  0.45216504 0.431769  ]
+Question:  ['all prices', 'before', 'big mama', 'discover', 'new story coming up', 'backpack', 'car', 'handbag', 'pottedplant', 'teddy bear', 'truck']
+---------------- ↓Question↓ ----------------
+　 backpack : 	False
+　 all prices : 	False
+　 before : 	False
+　 car : 	False
+　 new story coming up : 	True
+--------------------------------------------
+ ans:  ['245']
+ acc =  1.0
+
+query:  132_00002.jpg
+ ans_img:  ['245' '246' '248' '380' '379']
+ sim:  [0.77759314 0.77709293 0.697383   0.5870632  0.5802525 ]
+Question:  ['abc', 'before', 'discover', 'new story coming up', 'bench', 'bicycle', 'car', 'handbag', 'pottedplant', 'teddy bear', 'truck']
+---------------- ↓Question↓ ----------------
+　 abc : 	False
+　 before : 	False
+　 new story coming up : 	True
+--------------------------------------------
+ ans:  ['245', '248', '380']
+ acc =  1.0
+
+query:  132_00003.jpg
+ ans_img:  ['244' '241' '246' '248' '239']
+ sim:  [0.68033075 0.6325637  0.6217809  0.5948918  0.59391886]
+Question:  ['all prices', 'before', 'big mama', 'discover', 'echouse', 'new story coming up', 'subway', 'chair', 'diningtable', 'handbag', 'pottedplant', 'teddy bear', 'truck']
+---------------- ↓Question↓ ----------------
+　 chair : 	False
+　 echouse : 	False
+　 before : 	False
+　 teddy bear : 	False
+--------------------------------------------
+ ans:  []
+ acc =  0.0
+
+query:  132_00004.jpg
+ ans_img:  ['246' '245' '244' '248' '210']
+ sim:  [0.7452428  0.6737695  0.6066876  0.53190213 0.52119124]
+Question:  ['all prices', 'before', 'big mama', 'discover', 'new story coming up', 'outlet', 'car', 'handbag', 'pottedplant', 'teddy bear', 'truck']
+---------------- ↓Question↓ ----------------
+　 outlet : 	True
+--------------------------------------------
+ ans:  ['210']
+ acc =  0.0
+
+query:  133_00001.jpg
+ ans_img:  ['134' '135' '161' '162' '136']
+ sim:  [0.69723576 0.60727423 0.5593254  0.51875824 0.5175583 ]
+Question:  ['70%', 'jalan kayu', 'jujube', 'sale', 'backpack', 'bottle', 'car', 'pottedplant', 'suitcase', 'teddy bear', 'vase']
+---------------- ↓Question↓ ----------------
+　 car : 	False
+　 70% : 	True
+--------------------------------------------
+ ans:  ['135']
+ acc =  1.0
+
+query:  133_00002.jpg
+ ans_img:  ['134' '271' '125' '126' '127']
+ sim:  [0.19127022 0.1765989  0.16947122 0.16638006 0.16454126]
+Question:  ['mindchamps', 'mother', 'sale', 'starbucks coffee', 'bicycle', 'book', 'bus', 'car', 'chair', 'diningtable', 'motorbike']
+---------------- ↓Question↓ ----------------
+　 bus : 	False
+　 mindchamps : 	False
+　 starbucks coffee : 	False
+　 sale : 	True
+--------------------------------------------
+ ans:  ['134']
+ acc =  1.0
+
+query:  133_00003.jpg
+ ans_img:  ['134' '130' '135' '128' '129']
+ sim:  [0.6164996 0.5611193 0.5594153 0.5480234 0.5188841]
+Question:  ['70%', 'sale', 'starbucks coffee', 'ticket', 'bicycle', 'bottle', 'bus', 'car', 'motorbike', 'vase']
+---------------- ↓Question↓ ----------------
+　 bicycle : 	False
+　 70% : 	True
+--------------------------------------------
+ ans:  ['135']
+ acc =  1.0
+
+query:  133_00004.jpg
+ ans_img:  ['129' '134' '130' '128' '135']
+ sim:  [0.60767114 0.6025042  0.60210377 0.57733846 0.5535591 ]
+Question:  ['70%', 'sale', 'starbucks coffee', 'ticket', 'bicycle', 'bottle', 'bus', 'car', 'motorbike', 'vase']
+---------------- ↓Question↓ ----------------
+　 70% : 	True
+--------------------------------------------
+ ans:  ['135']
+ acc =  1.0
+
+query:  137_00001.jpg
+ ans_img:  ['136' '138' '135' '134' '139']
+ sim:  [0.65002936 0.5585203  0.4856871  0.44741198 0.44478607]
+Question:  ['70%', 'sale', 'stairs', 'bottle', 'car', 'refrigerator', 'teddy bear', 'vase']
+---------------- ↓Question↓ ----------------
+　 sale : 	True
+　 stairs : 	True
+--------------------------------------------
+ ans:  ['138']
+ acc =  1.0
+
+query:  137_00002.jpg
+ ans_img:  ['257' '117' '258' '136' '256']
+ sim:  [0.20331267 0.18038507 0.17835559 0.17287143 0.16178092]
+Question:  ['70%', 'exit', 'for leasing enquiries', 'mother', 'new story coming up', 'sale', 'starbucks coffee', 'backpack', 'book', 'car', 'handbag', 'pottedplant', 'teddy bear', 'truck', 'vase']
+---------------- ↓Question↓ ----------------
+　 book : 	False
+　 sale : 	True
+--------------------------------------------
+ ans:  ['136']
+ acc =  1.0
+
+query:  137_00003.jpg
+ ans_img:  ['138' '135' '136' '139' '141']
+ sim:  [0.66107404 0.56570786 0.5584381  0.53712547 0.5015084 ]
+Question:  ['70%', 'sale', 'stairs', 'bottle', 'car', 'refrigerator', 'teddy bear', 'tvmonitor', 'vase']
+---------------- ↓Question↓ ----------------
+　 tvmonitor : 	False
+　 sale : 	True
+　 70% : 	True
+　 car : 	False
+　 bottle : 	True
+--------------------------------------------
+ ans:  ['135']
+ acc =  1.0
+
+query:  137_00004.jpg
+ ans_img:  ['136' '135' '138' '139' '134']
+ sim:  [0.68456584 0.60442495 0.5924637  0.55363303 0.5524876 ]
+Question:  ['70%', 'sale', 'stairs', 'bottle', 'car', 'refrigerator', 'teddy bear', 'vase']
+---------------- ↓Question↓ ----------------
+　 sale : 	True
+　 stairs : 	True
+--------------------------------------------
+ ans:  ['138']
+ acc =  1.0
+
+query:  140_00001.jpg
+ ans_img:  ['141' '139' '138' '142' '143']
+ sim:  [0.60901725 0.5636361  0.4831635  0.47950718 0.4685008 ]
+Question:  ['sale', 'stairs', 'bench', 'refrigerator', 'tvmonitor']
+---------------- ↓Question↓ ----------------
+　 sale : 	True
+--------------------------------------------
+ ans:  ['138']
+ acc =  1.0
+
+query:  140_00002.jpg
+ ans_img:  ['141' '139' '252' '326' '284']
+ sim:  [0.49221432 0.36239347 0.1715933  0.16321865 0.16212839]
+Question:  ['exit', 'japan home', 'learning zone', 'new story coming up', 'backpack', 'handbag', 'pottedplant', 'refrigerator', 'tvmonitor']
+---------------- ↓Question↓ ----------------
+　 learning zone : 	False
+　 japan home : 	False
+　 new story coming up : 	False
+　 tvmonitor : 	True
+--------------------------------------------
+ ans:  ['141']
+ acc =  1.0
+
+query:  140_00003.jpg
+ ans_img:  ['139' '138' '141' '142' '143']
+ sim:  [0.65925425 0.65887845 0.6148951  0.56581074 0.54567397]
+Question:  ['sale', 'stairs', 'bench', 'refrigerator', 'tvmonitor']
+---------------- ↓Question↓ ----------------
+　 tvmonitor : 	True
+--------------------------------------------
+ ans:  ['141']
+ acc =  1.0
+
+query:  140_00004.jpg
+ ans_img:  ['139' '138' '135' '141' '136']
+ sim:  [0.4572777  0.42370576 0.36754057 0.3608186  0.3587944 ]
+Question:  ['70%', 'sale', 'stairs', 'bottle', 'car', 'refrigerator', 'teddy bear', 'tvmonitor', 'vase']
+---------------- ↓Question↓ ----------------
+　 car : 	False
+　 70% : 	False
+　 sale : 	True
+--------------------------------------------
+ ans:  ['138']
+ acc =  1.0
+
+query:  150_00001.jpg
+ ans_img:  ['151' '149' '152' '147' '148']
+ sim:  [0.5583414 0.552729  0.5189725 0.4479518 0.4330208]
+Question:  ['$20', 'ktv', 'bench', 'book', 'car', 'cell phone', 'clock', 'handbag', 'truck', 'tvmonitor']
+---------------- ↓Question↓ ----------------
+　 cell phone : 	False
+　 $20 : 	True
+--------------------------------------------
+ ans:  ['151']
+ acc =  1.0
+
+query:  150_00002.jpg
+ ans_img:  ['153' '151' '152' '383' '154']
+ sim:  [0.504718   0.48562667 0.47512102 0.4619324  0.4168522 ]
+Question:  ['$20', 'gnc', 'ktv', 'bench', 'book']
+---------------- ↓Question↓ ----------------
+　 gnc : 	False
+　 $20 : 	True
+--------------------------------------------
+ ans:  ['151']
+ acc =  1.0
+
+query:  150_00003.jpg
+ ans_img:  ['149' '152' '151' '148' '153']
+ sim:  [0.7474278  0.72876745 0.7166295  0.5525963  0.47420004]
+Question:  ['$20', 'ktv', 'bench', 'book', 'cell phone', 'handbag', 'truck', 'tvmonitor']
+---------------- ↓Question↓ ----------------
+　 cell phone : 	False
+　 $20 : 	True
+--------------------------------------------
+ ans:  ['151']
+ acc =  1.0
+
+query:  150_00004.jpg
+ ans_img:  ['152' '154' '153' '149' '383']
+ sim:  [0.6148749  0.56357783 0.5613454  0.529316   0.5113669 ]
+Question:  ['gnc', 'ktv', 'bench', 'book', 'handbag', 'tvmonitor']
+---------------- ↓Question↓ ----------------
+　 handbag : 	False
+　 gnc : 	False
+　 ktv : 	True
+--------------------------------------------
+ ans:  ['152', '153', '383']
+ acc =  1.0
+
+query:  166_00001.jpg
+ ans_img:  ['165' '167' '164' '168' '169']
+ sim:  [0.577282   0.55932295 0.50172424 0.484295   0.47161788]
+Question:  ['mother', 'sale', 'starbucks coffee', 'backpack', 'bicycle', 'book', 'cake', 'car', 'chair', 'handbag', 'suitcase']
+---------------- ↓Question↓ ----------------
+　 chair : 	False
+　 starbucks coffee : 	True
+--------------------------------------------
+ ans:  ['168']
+ acc =  1.0
+
+query:  166_00002.jpg
+ ans_img:  ['198' '157' '377' '158' '375']
+ sim:  [0.7718912  0.72808176 0.7023074  0.6976468  0.69550925]
+Question:  ['丑小鸭', 'book', 'handbag']
+---------------- ↓Question↓ ----------------
+　 丑小鸭 : 	False
+　 book : 	True
+--------------------------------------------
+ ans:  ['375']
+ acc =  0.0
+
+query:  166_00003.jpg
+ ans_img:  ['167' '165' '169' '170' '164']
+ sim:  [0.7433518  0.702366   0.6158882  0.61104524 0.6098279 ]
+Question:  ['mother', 'sale', 'starbucks coffee', 'backpack', 'bicycle', 'book', 'cake', 'car', 'chair', 'handbag', 'suitcase']
+---------------- ↓Question↓ ----------------
+　 backpack : 	False
+　 starbucks coffee : 	True
+--------------------------------------------
+ ans:  ['170']
+ acc =  0.0
+
+query:  166_00004.jpg
+ ans_img:  ['165' '164' '170' '162' '129']
+ sim:  [0.5372763  0.53273183 0.48633897 0.48264423 0.47224018]
+Question:  ['jalan kayu', 'jujube', 'starbucks coffee', 'backpack', 'bicycle', 'book', 'cake', 'handbag', 'pottedplant', 'suitcase']
+---------------- ↓Question↓ ----------------
+　 jalan kayu : 	False
+　 starbucks coffee : 	True
+　 bicycle : 	True
+--------------------------------------------
+ ans:  ['170']
+ acc =  0.0
 **************************************************
 acc. =  [0. 1. 1. 1. 1. 1. 1. 1. 1. 0. 1. 1. 1. 0. 1. 1. 1. 1. 1. 1. 1. 1. 1. 0.
- 1. 1. 1. 1. 0. 0. 1. 1. 1. 1. 1. 1. 1. 0. 1. 1. 1. 0. 1. 1. 1. 0. 1. 1.
- 1. 0. 1. 1. 0. 0. 1. 1. 0. 0. 1. 1. 1. 1. 0. 1. 1. 0. 1. 1. 1. 1. 0. 1.
- 0. 0. 0. 0. 0. 0. 0. 1. 1. 1. 0. 0. 1. 1. 1. 1. 1. 1. 1. 1. 0. 0. 1. 1.
- 1. 1. 1. 1.]
-Accuracy =  0.72
+ 1. 1. 1. 1. 0. 0. 1. 1. 1. 0. 1. 0. 1. 0. 1. 0. 1. 0. 1. 0. 1. 0. 1. 1.
+ 1. 0. 1. 1. 0. 1. 1. 1. 1. 0. 1. 1. 1. 1. 0. 1. 1. 0. 1. 1. 1. 1. 1. 1.
+ 0. 0. 0. 0. 0. 0. 0. 1. 1. 1. 0. 0. 1. 1. 1. 1. 1. 1. 1. 1. 1. 0. 1. 0.
+ 1. 1. 0. 1. 1. 1. 0. 0. 0. 0. 1. 0. 0. 0. 1. 1. 0. 1. 1. 1. 1. 1. 0. 0.
+ 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 0. 0. 0.]
+Accuracy =  0.6928571428571428
 Top5 fail =  0
